@@ -9,8 +9,8 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-gaps inner 5
-gaps outer 0
+#gaps inner 5
+#gaps outer 0
 for_window [class=".*"] border pixel 3
 
 set $mod Mod4
@@ -187,7 +187,7 @@ client.urgent           $darker             $darker            #ffffff          
 bar {
 	font pango: System San Francisco Display Regular 16
 	#status_command i3status
-	status_command ~/.i3/bumblebee-status/bumblebee-status \
+	status_command ~/.config/i3/bumblebee-status/bumblebee-status \
 	-m load cpu memory apt uptime pasink datetime \
 	-t custom \
 	-p pulseaudio.autostart=false
